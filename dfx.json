@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "first_proj_backend": {
+      "candid": "src/first_proj_backend/first_proj_backend.did",
+      "package": "first_proj_backend",
+      "type": "rust"
+    },
+    "first_proj_frontend": {
+      "dependencies": [
+        "first_proj_backend"
+      ],
+      "source": [
+        "src/first_proj_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "first_proj_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
